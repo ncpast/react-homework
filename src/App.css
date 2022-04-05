@@ -1,38 +1,95 @@
-.App {
-  text-align: center;
+.container {
+    width: 120px;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    box-shadow: inset rgb(0 0 0 / 12%) 0 3px 13px 1px;
+    z-index: 10;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+#profile-info {
+    width: 100%;
+    background-color: white;
+    min-height: 300px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+#content-sec {
+    width: 100%;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.left_col {
+    height: 100px;
+    background-color: rgb(238, 238, 238);
 }
 
-.App-link {
-  color: #61dafb;
+.right_col {
+    height: 100%;
+    background-color: rgb(238, 238, 238);
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+a {
+    text-decoration: none;
+    transition: ease 0.25s;
+    font-weight: 500;
+    color: #0089fa;
+}
+
+a:hover {
+    text-decoration: underline;
+    font-size: 1.4rem;
+}
+
+#posts {
+    min-height: 100px;
+    background-color: white;
+    width: 100%;
+}
+
+img[alt~="Icon"] {
+    margin-top: 20px;
+    height: 50px;
+    width: 50px;
+    border-radius: 10px;
+    transition: 0.2s ease;
+    cursor: pointer;
+    animation: anim 0.75s ease;
+}
+
+@keyframes anim {
+    from {
+        transform: scale(10%);
+        opacity: 0;
+        filter: blur(10px);
+    }
+    to {
+        transform: scale(100%);
+        opacity: 1;
+        filter: blur(0px);
+    }
+}
+
+img[alt~="Icon"]:hover {
+    transform: scale(110%);
+}
+
+.left_col,
+.right_col {
+    display: flex;
+    align-items: top;
+    justify-content: center;
+    overflow: hidden;
+    text-align: left;
+    font-size: 1.2rem;
+    color: white;
+    font-weight: 700;
+}
+
+body {
+    background-color: #000000;
+}
+
+#main-section {
+    display: flex;
+    flex-direction: row;
 }
