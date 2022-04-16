@@ -9,6 +9,10 @@
     border-right: rgb(224, 224, 224) solid 1px;
 }
 
+.active {
+    font-weight: 650 !important;
+}
+
 #profile-info {
     width: 100%;
     background-color: white;
@@ -32,14 +36,14 @@
 
 .web-nav {
     text-decoration: none;
-    transition: ease 0.25s;
-    font-weight: 500;
+    transition: ease 0.1s;
+    font-weight: 400;
     color: #0089fa;
 }
 
 .web-nav:hover {
     text-decoration: underline;
-    font-size: 1.4rem;
+    font-size: 1.3rem;
 }
 
 #posts {
