@@ -6,7 +6,7 @@ const postsRaw = require('../../msg.json');
 const Posts = (Props) => {
     const posts = postsRaw.map((p)=>{
         return <Post text={p.text} likes={p.likes} name={p.name}/>
-    })
+    });
     return (
         <div id='nav-margin'>
             <h1 className='posts-header'>Posts</h1>
@@ -19,7 +19,7 @@ const Posts = (Props) => {
                 {posts}
             </section>
         </div>
-    )
-}
+    );
+};
 
 export default Posts;
