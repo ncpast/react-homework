@@ -19,7 +19,7 @@ const Posts = (Props) => {
                 {posts}
             </section>
         </div>
-    )
+    );
 };
 
 export default Posts;
