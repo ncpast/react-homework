@@ -6,6 +6,7 @@
     position: fixed;
     box-shadow: inset rgb(0 0 0 / 12%) 0 3px 13px 1px;
     z-index: 10;
+    border-right: rgb(224, 224, 224) solid 1px;
 }
 
 #profile-info {
@@ -16,6 +17,7 @@
 
 #content-sec {
     width: 100%;
+    margin-left: 120px;
 }
 
 .left_col {
@@ -28,14 +30,14 @@
     background-color: rgb(238, 238, 238);
 }
 
-a {
+.web-nav {
     text-decoration: none;
     transition: ease 0.25s;
     font-weight: 500;
     color: #0089fa;
 }
 
-a:hover {
+.web-nav:hover {
     text-decoration: underline;
     font-size: 1.4rem;
 }
@@ -86,7 +88,7 @@ img[alt~="Icon"]:hover {
 }
 
 body {
-    background-color: #000000;
+    background-color: #ffffff;
 }
 
 #main-section {

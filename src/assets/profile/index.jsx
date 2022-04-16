@@ -1,7 +1,8 @@
 import icon from '../app-icon.jpg'
 import Navigation from '../nav/nav.jsx'
 import ProfileInfo from './profile-info/profile-info.jsx';
-import Posts from './posts/posts.jsx'
+import Dialogs from '../dialogs/dialogs.jsx'
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
 
 const Profile = () => {
     return (
@@ -15,12 +16,12 @@ const Profile = () => {
             </div>
         </div>
         <section id='content-sec'>
-            <div id='profile-info'>
-              <ProfileInfo />
-            </div>
-            <div id='posts'>
-               <Posts />
-            </div>
+                <Routes>
+                    <Route path='/' element={<ProfileInfo />}></Route>
+                    <Route path='/chats' element={<Dialogs />}>
+                        <Route path='*' />
+                    </Route>
+                </Routes>
         </section>
         </section>
     );
