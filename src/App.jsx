@@ -1,7 +1,7 @@
 import Profile from './assets/profile/index.jsx'
 import './App.css';   
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
-const rawData = require('./assets/msg.json');
+import rawData from './assets/msg.js';
 
 function App() {
   return (

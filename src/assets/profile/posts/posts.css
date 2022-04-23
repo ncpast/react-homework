@@ -13,6 +13,10 @@ button {
     cursor: pointer;
 }
 
+.post-text {
+    max-width: 400px;
+}
+
 button:hover {
     background-color: white;
 }

@@ -7,7 +7,7 @@ const Posts = (Props) => {
         <img src={icon}></img>
         <div>
             <h1>{Props.name}</h1>
-            <p>{Props.text}</p>
+            <p className='post-text'>{Props.text}</p>
             <p>👍 {Props.likes}</p>
         </div>
     </div>
