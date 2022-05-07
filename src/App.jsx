@@ -1,7 +1,7 @@
 import Profile from './assets/profile/index.jsx'
 import './App.css';   
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
-import rawData from './assets/msg.js';
+import rawData from './redux/state.js';
 
 function App() {
   return (

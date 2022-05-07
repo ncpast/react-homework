@@ -3,8 +3,8 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
-import { addPost, Subscribe } from './assets/msg';
-import state from './assets/msg';
+import state from './redux/state';
+const { addPost, Subscribe } = state;
 
 const render = () => {
     ReactDOM.render( <

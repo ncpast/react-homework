@@ -17,6 +17,26 @@ button {
     max-width: 400px;
 }
 
+.like-counter {
+    display: flex;
+    align-items: center;
+}
+
+.like-counter>p {
+    margin: 0;
+}
+
+.post-like {
+    cursor: pointer;
+    user-select: none;
+    transition: 0.25s ease;
+    font-size: 20px;
+}
+
+.post-like:hover {
+    font-size: 25px;
+}
+
 button:hover {
     background-color: white;
 }
